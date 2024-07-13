@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script type= "text/javascript" src="email.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("Lus9CSCYE0XhQrog4");
+      })();
+    </script>
+</head>
+<body>
+    <header id = "home">            
+        <nav id="nav-wrap">
+
+            <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+             <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+                <ul id="nav" class="nav">
+                    <li><a class="smoothscroll" href="#home">Home</a></li>
+                    <li><a class="smoothscroll" href="#portfolio">Portfolio</a></li>
+                    <li><a class="smoothscroll" href="#work-experience">Work Experience</a></li>
+                    <li><a class="smoothscroll" href="#course-work-certifications">Course Work</a></li>
+                    <li><a class="smoothscroll" href="#about">About</a></li>
+                    <li><a class="smoothscroll" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+
+        <div id="title">
+            <h1>I'm Anthony Le</h1>     
+        </div>
+            
+    </header>
+
+    <!-- Portfolio -->
+    
+    <section id="portfolio">
+        <br>
+        <br>
+        <h2>Portfolio</h2>
+        <div class="project">
+            <h3>Python Poker Game</h3>
+            <p>Used Python to build classes and functions for the backend 
+                of the application with a GUI frontend.</p>
+        </div>
+        <div class="project">
+            <h3>Full Stack Battleship</h3>
+            <p>Single player battleship that randomly places ship on the board and 
+                records the top player with the best amount of moves on the leaderboard.</p>
+        </div>
+        <div class="project">
+            <h3>Full Stack Car Parking App</h3>
+            <p>College campus website application to help aid with campus 
+                parking lot management using a reservation system.</p>
+        </div>
+    </section>
+
+    <!-- Work Experience -->
+
+    <section id="work-experience">
+        <br>
+        <br>
+        <h2>Work Experience</h2>
+        <div class="project">
+            <h3>IT Intern/Instructor</h3>
+            <p>Work in fast and demanding environments solving critical thinking 
+                problems relating to IT support.</p>
+            <p>Manage campers in their day to day programming tasks and answering 
+                related questions.</p>
+        </div>
+        <div class="project">
+            <h3>Bartender/Server/Busser</h3>
+            <p>Communicate clearly with coworkers and management to provide efficient service for customers</p>
+            <p>Work in a fast paced environment to deliver high quality service for customers</p>
+        </div>
+        <div class="project">
+            <h3>Peer Tutor</h3>
+            <p>Identify solutions to the problem students bring up during sessions accurately for optimal learning experience</p>
+            <p>Devise effective lesson structures promptly within a limited set of time given in session time.</p>
+        </div>
+    </section>
+
+    <!-- Course Work -->
+
+    <section id="course-work-certifications">
+        <br>
+        <br>
+        <h2>Course Work/Certifications</h2> 
+        <div class="project">
+            <h3>COMP TIA SECURITY+</h3>
+            <p>CompTIA Security+ emphasizes hands-on practical skills, ensuring the security professional is better prepared 
+                to problem solve a wider variety of issues. It is the first security certification IT professionals should 
+                earn and establishes the core knowledge required of any cybersecurity role to provide a springboard to 
+                intermediate-level cybersecurity jobs.</p>
+        </div>
+        <div class="project">
+            <h3>BACHELOR OF SCIENCE IN COMPUTER SCIENCE</h3>
+            <p>Computer science offers a mix of theory of computation, software development, systems concepts and computing applications.</p>
+        </div>
+        <div class="project">
+            <h3>MINOR IN I/O PSYCHOLOGY</h3>
+            <p>Description of Project 2</p>
+        </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <p>Description of Project 2</p>
+        </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <p>Description of Project 2</p>
+        </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <p>Description of Project 2</p>
+        </div>
+    </section>
+
+    <!-- About Me -->
+
+    <section id="about">
+        <br>
+        <br>
+        <h2>About Me</h2>
+        <p>Write something about yourself here.</p>
+    </section>
+
+    <!-- Contact Me -->
+
+    <section id="contact">
+        <br>
+        <br>
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="button" id="submit-button" onclick="sendMail()">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Portfolio</p>
+    </footer>
+</body>
+</html>
